@@ -2,13 +2,15 @@
     padding: 0%;
    
 }
+
+
 html,body{
     height: 100%;
     width: 100%;}
-#main{
+@media (max-width: 480px){#main{
     background-color: rgb(112, 180, 239);
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 
 #header{
@@ -18,7 +20,7 @@ html,body{
     display: flex;
     position: fixed;
     align-items: center;
-   
+   flex-wrap: wrap;
   
 
 }
@@ -218,4 +220,9 @@ img{
 background-image: url(/html/photo-1601295074643-4c12e598a2b2.avif);
 background-size: 100%;
 }
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}}
 
