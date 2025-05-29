@@ -202,6 +202,8 @@ html, body {
 #page2 {
     background-color: rgb(6, 6, 95);
     padding: 20px 0;
+    /* Fix anchor jump to compensate for fixed header */
+    scroll-margin-top: 10vh;  /* same as header height */
 }
 
 #head {
@@ -253,7 +255,7 @@ html, body {
     background-image: url(/html/photo-1601295074643-4c12e598a2b2.avif);
     background-size: cover;
     padding: 30px;
-    color: #000;
+    color: #0b0101;
     font-size: 1.1rem;
     line-height: 1.6;
     overflow-x: hidden;
@@ -311,6 +313,11 @@ html, body {
     #page3 {
         font-size: 1rem;
         padding: 20px;
+    }
+
+    /* Fix big gap after page1 */
+    #page1 {
+        min-height: auto;
     }
 }
 
